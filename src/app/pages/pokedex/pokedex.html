@@ -1,0 +1,19 @@
+<section class="pokedex" aria-label="Pokedex — 151 premiers Pokemon">
+  @for (pokemon of pokemons; track pokemon.id) {
+    <div class="card" [attr.aria-label]="pokemon.name">
+      <img
+        [src]="pokemon.id | pokeImage"
+        [alt]="pokemon.name"
+        width="96"
+        height="96"
+      />
+      <span class="card__id">#{{ pokemon.id | number:'3.0-0' }}</span>
+      <h2 class="card__name">{{ pokemon.name }}</h2>
+      <ul class="card__types" aria-label="Types">
+        @for (type of pokemon.types; track type) {
+          <li [class]="type">{{ type }}</li>
+        }
+      </ul>
+    </div>
+  }
+</section>

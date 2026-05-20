@@ -1,1 +1,46 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: PokemonSolid;
+  src: url('/assets/fonts/PokemonSolid.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: PokemonHollow;
+  src: url('/assets/fonts/PokemonHollow.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: PokemonSolid, sans-serif;
+  color: #ffde00;
+  -webkit-text-stroke: 5px #3b4cca;
+  paint-order: stroke fill;
+}
+
+a {
+  color: #ffde00;
+  -webkit-text-stroke: 10px #cc0000;
+  paint-order: stroke fill;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: 0.5s ease-in-out transform;
+  cursor: pointer;
+}
+
+a:hover {
+  transform: scale(1.2);
+}

@@ -1,0 +1,16 @@
+
+:host {
+  background-color: #cc0000;
+  display: block;
+  text-align: center;
+
+  h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #ffde00;
+    -webkit-text-stroke: 10px #3b4cca;
+    paint-order: stroke fill;
+    text-transform: uppercase;
+    letter-spacing: 0.7rem;
+  }
+}
