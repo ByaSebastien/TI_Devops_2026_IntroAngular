@@ -16,6 +16,33 @@ export const routes: Routes = [
   },
   {
     path: 'pokedex',
-    loadComponent: () => import('./pages/pokedex/pokedex').then((m) => m.Pokedex),
-  }
+    loadComponent: () =>
+      import('./pages/pokedex/pokedex').then((m) => m.Pokedex),
+  },
+  {
+    path: 'pokemon/:id',
+    loadComponent: () =>
+      import('./pages/poke-details/poke-details').then((m) => m.PokeDetails),
+  },
+  {
+    path: 'poke-chriz',
+    loadComponent: () =>
+      import('./pages/poke-chriz/poke-chriz').then((m) => m.PokeChriz),
+  },
 ];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

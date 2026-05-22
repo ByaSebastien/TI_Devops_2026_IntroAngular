@@ -1,0 +1,7 @@
+@if(pokemon()){
+  <app-poke-card [pokemon]="pokemon()!"></app-poke-card>
+}
+<div class="buttons">
+  <button (click)="previous()">Previous</button>
+  <button (click)="next()">Next</button>
+</div>

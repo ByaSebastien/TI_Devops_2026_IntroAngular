@@ -14,6 +14,7 @@ export class Nav {
     { path: '/home', label: 'Home' },
     { path: '/about', label: 'About' },
     { path: '/pokedex', label: 'Pokedex' },
+    { path: '/poke-chriz', label: 'Poke Chriz' },
   ];
 }
 
